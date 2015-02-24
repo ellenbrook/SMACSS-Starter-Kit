@@ -1,5 +1,5 @@
 # SMACSS-Starter-Kit
-Just a personal starter kit based on SASS and SMCASS
+Just a personal starter kit based on SASS and SMACSS
 
 Features and style.sass file that imports the following: 
 
