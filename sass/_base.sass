@@ -1,5 +1,7 @@
 /* Base Layout */
 html
+	-webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
 	-o-box-sizing: border-box
 	-webkit-box-sizing: border-box
 	box-sizing: border-box
@@ -32,6 +34,12 @@ body
 	
 	color: $c--text
 
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
+	display: block
+
+audio,canvas,video
+	display: inline-block
+
 
 h1
 	+heading-size($h1-font-size)
@@ -62,14 +70,14 @@ a
 	&:active
 		text-decoration: none
 
-ul
+ul, dl, ol, menu
 	margin: 0
 	padding: 0
 	list-style-type: none
 	overflow: hidden
 
-	li
-		float: left
+li
+	float: left
 
 	a
 		display: inline-block
