@@ -12,3 +12,9 @@ Features and style.sass file that imports the following:
 * State - For the various states for elements in the site.
 
 For more information check out [this great video](https://www.youtube.com/watch?v=6co781JgoqQ). 
+
+# After downloading
+1. ```cd sass/vendor```
+2. ```bourbon update```
+3. ```neat update```
+
