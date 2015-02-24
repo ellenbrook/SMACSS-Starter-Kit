@@ -1,3 +1,4 @@
 #Ignore Sass Stuff
 *.sass-cache
+/sass/*.sass-cache
 *.css.map
