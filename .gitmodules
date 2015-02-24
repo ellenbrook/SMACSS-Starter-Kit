@@ -1,0 +1,6 @@
+[submodule "sass/vendor/bourbon"]
+	path = sass/vendor/bourbon
+	url = git@github.com:thoughtbot/bourbon.git
+[submodule "sass/vendor/neat"]
+	path = sass/vendor/neat
+	url = git@github.com:thoughtbot/neat.git
