@@ -2,3 +2,6 @@
 *.sass-cache
 /sass/*.sass-cache
 *.css.map
+
+#Ignore Codekit File
+*.codekit
