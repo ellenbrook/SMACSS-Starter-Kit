@@ -41,8 +41,14 @@ $h4-margin-top: 1 * $h4-line
 $h4-margin-bottom: 1 * $h4-line
 
 /* Break Points */
-$bp--small: min-width 320px
-$bp--phone: min-width 480px
-$bp--tablet: min-width 768px
-$bp--standard: min-width 992px
-$bp--large: min-width 1200px
+$bp--small: 320px
+$bp--phone: 480px
+$bp--tablet: 768px
+$bp--standard: 992px
+$bp--large: 1200px
+
+$bp--1: new-breakpoint(min-width em($bp--small) max-width em($bp--phone - 1))
+$bp--2: new-breakpoint(min-width em($bp--phone) max-width em($bp--tablet - 1))
+$bp--3: new-breakpoint(min-width em($bp--tablet) max-width em($bp--standard - 1))
+$bp--4: new-breakpoint(min-width em($bp--standard) max-width em($bp--large - 1))
+$bp--5: new-breakpoint(min-width em($bp--large))
