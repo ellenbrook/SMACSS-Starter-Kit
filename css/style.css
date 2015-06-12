@@ -16,8 +16,7 @@ html {
 /* Color */
 /* Typography Variables. Change scale using Gridlovers.net */
 /* Break Points */
-/* Mixins */
-/* Heading Font Size Mixin */
+/* Random standard Desktop Sizes */
 /* Utility Classes */
 .pull-left {
   float: left; }
@@ -27,6 +26,17 @@ html {
 
 .center {
   text-align: center; }
+
+.floated {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden; }
+  .floated li {
+    float: left; }
+    .floated li a {
+      display: inline-block;
+      padding: 10px; }
 
 /* Base Layout */
 html {
@@ -54,8 +64,8 @@ body {
   padding: 0;
   background-color: #fff;
   font-family: sans-serif;
-  font-size: 1.125em;
-  line-height: 1.38889em;
+  font-size: 1em;
+  line-height: 1.8125em;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   color: #000; }
@@ -67,24 +77,24 @@ audio, canvas, video {
   display: inline-block; }
 
 h1 {
-  margin: 1.194445em 0 0.5972225em;
-  font-size: 2.38889em;
-  line-height: 2.38889em; }
+  margin: 0 0 0.42647em 0;
+  line-height: 1.27941em;
+  font-size: 4.25em; }
 
 h2 {
-  margin: 0.88889em 0 0.444445em;
-  font-size: 1.77778em;
-  line-height: 1.77778em; }
+  margin: 0 0 0.69048em 0;
+  line-height: 1.38096em;
+  font-size: 2.625em; }
 
 h3 {
-  margin: 0.666665em 0 0.3333325em;
-  font-size: 1.33333em;
-  line-height: 1.33333em; }
+  margin: 0 0 1.11538em 0;
+  line-height: 1.11538em;
+  font-size: 1.625em; }
 
 h4 {
-  margin: 0.5em 0 0.25em;
-  font-size: 1em;
-  line-height: 1em; }
+  margin: 0 0 1.8125em 0;
+  line-height: 1.8125em;
+  font-size: 1em; }
 
 a {
   text-decoration: none;
@@ -98,18 +108,6 @@ a {
     text-decoration: none; }
   a:active {
     text-decoration: none; }
-
-ul, dl, ol, menu {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden; }
-
-li {
-  float: left; }
-  li a {
-    display: inline-block;
-    padding: 10px; }
 
 form {
   width: 100%;

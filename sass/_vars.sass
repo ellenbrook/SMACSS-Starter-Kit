@@ -8,47 +8,46 @@ $c--primary: #006699
 
 /* Typography Variables. Change scale using Gridlovers.net */
 $base-font-style: sans-serif
-$base-font-size: 1.125em
-$base-line-height: 1.38889em
-$measure: 760px
+$base-font-size: 1em
+$base-line-height: 1.8125em
+$measure: 978px
 
-$h1-font-size: 2.38889em
-$h1-line: 0.5814em
-$h1-lines: 2
+$h1-font-size: 4.25em
+$h1-line: 0.42647em
+$h1-lines: 3
 $h1-line-height: $h1-line * $h1-lines
 $h1-margin-top: 2 * $h1-line
 $h1-margin-bottom: 1 * $h1-line
 
-$h2-font-size: 1.77778em
-$h2-line: 0.78125em
+$h2-font-size: 2.625em
+$h2-line: 0.69048em
 $h2-lines: 2
 $h2-line-height: $h2-line * $h2-lines
 $h2-margin-top: 2 * $h2-line
 $h2-margin-bottom: 1 * $h2-line
 
-$h3-font-size: 1.33333em
-$h3-line: 1.04167em
+$h3-font-size: 1.625em
+$h3-line: 1.11538em
 $h3-lines: 1
 $h3-line-height: $h3-line * $h3-lines
 $h3-margin-top: 1 * $h3-line
 $h3-margin-bottom: 1 * $h3-line
 
 $h4-font-size: 1em
-$h4-line: 1.38889em
+$h4-line: 1.8125em
 $h4-lines: 1
 $h4-line-height: $h4-line * $h4-lines
 $h4-margin-top: 1 * $h4-line
 $h4-margin-bottom: 1 * $h4-line
 
-/* Break Points */
-$bp--small: 320px
-$bp--phone: 480px
-$bp--tablet: 768px
-$bp--standard: 992px
-$bp--large: 1200px
 
-$bp--1: new-breakpoint(min-width em($bp--small) max-width em($bp--phone - 1))
-$bp--2: new-breakpoint(min-width em($bp--phone) max-width em($bp--tablet - 1))
-$bp--3: new-breakpoint(min-width em($bp--tablet) max-width em($bp--standard - 1))
-$bp--4: new-breakpoint(min-width em($bp--standard) max-width em($bp--large - 1))
-$bp--5: new-breakpoint(min-width em($bp--large))
+/* Break Points */
+
+/* Random standard Desktop Sizes */
+$bp--small: 480px
+$bp--medium: 768px
+$bp--large: 960px
+$small: new-breakpoint(min-width em($bp--small) max-width em($bp--medium - 1))
+$medium: new-breakpoint(min-width em($bp--medium) max-width em($bp--large - 1))
+$large: new-breakpoint(min-width em($bp--large))
+
