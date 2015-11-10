@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
  # Mixins
  -------------------------------------------------------------*/
-=nav-list($color, $background-color, $padding)
+=nav-list($color, $background-color, $padding, $darken)
 	list-style-type: none
 	margin: 0
 	
@@ -9,12 +9,19 @@
 		display: block
 		float: left
 		
-		&:last-child
-			margin-right: 0px
-			
-			> a
-				display: block
-				padding: $padding
-				background-color: $background-color
-				color: $color
-				text-decoration: none
+	&:last-child
+		margin-right: 0px
+
+	a
+		display: block
+		padding: $padding
+		background-color: $background-color
+		color: $color
+		text-decoration: none
+
+		/* If darken is true then darken it */
+		&:hover
+			@if $darken		
+				color: darken($color, 20%)
+			@else
+				color: lighten($color, 30%)
