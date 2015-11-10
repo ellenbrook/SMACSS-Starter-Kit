@@ -178,6 +178,20 @@ input[type="email"], input[type="number"], input[type="password"], input[type="s
     .selection-group input:active {
       background-color: red; }
 
+button {
+  display: inline-block;
+  padding: 6px 12px;
+  font-size: 1em;
+  text-align: center;
+  white-space: nowrap;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #ccc;
+  border-radius: 4px; }
+  button:hover {
+    background-color: #e6e6e6; }
+
 /*--------------------------------------------------------------
  * # State Changes
  * ------------------------------------------------------------- */
