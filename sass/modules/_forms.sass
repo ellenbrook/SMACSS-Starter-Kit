@@ -1,3 +1,48 @@
 /*--------------------------------------------------------------
  # Forms
  -------------------------------------------------------------*/
+form
+	width: 100%
+
+textarea
+	resize: vertical
+
+label
+	display: inline-block
+
+#{$all-text-inputs}, textarea
+	display: block
+	width: 100%
+	padding: 6px 12px
+	font-size: $base-font-size
+	line-height: $base-line-height
+	background-color: #fff
+	border: 1px solid #ccc
+	border-radius: 4px
+	color: #555
+	outline: 0
+
+	&:focus
+		border-color: #555
+
+.form-group
+	margin-bottom: $base-font-size
+
+.selection-group
+	position: relative
+	margin-bottom: $base-font-size
+
+	label
+		margin-left: 10px
+
+		&:first-child
+			margin: 0
+
+	input
+		margin: 0
+		padding: 5px
+		height: 16px
+		width: 16px
+	
+		&:active
+			background-color: red

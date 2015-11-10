@@ -21,40 +21,40 @@
 	<p>Bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet. Nunc eu ullamcorper orci. Quisque eget odio ac lectus vestibulum faucibus eget in metus. In pellentesque faucibus vestibulum. Nulla at nulla justo, eget luctus tortor. Nulla facilisi. Duis aliquet egestas purus in blandit. Curabitur vulputate, ligula lacinia scelerisque.</p>
 	
 	<form>
-		<label>
-			<span>Name</span>
-			<input type="text" placeholder="Name">
-		</label>
+		<div class="form-group">
+			<label for="exampleText">Example Text</label>
+			<input type="text" placeholder="Name" name="exampleText">
+		</div>
 
-		<label>
-			<span>Password</span>
-			<input type="password">
-		</label>
-		
-		<label>
-			<span>Check Box 1</span>
-			<input type="checkbox" name="category" value="val">
-		</label>	
-		
-		<label>
-			<span>Check Box 2</span>
-			<input type="checkbox" name="category" value="val">
-		</label>
+		<div class="form-group">
+			<label for="examplePassword">Password</label>
+			<input type="password" name="exampleText">
+		</div>
 
-		<label>
-			<span>Text Input</span>
-			<textarea placeholder="Placeholder text here."></textarea>
-		</label>
+		<div class="selection-group">
+			<label>
+				<input type="checkbox" name="category" value="val1"> Value 1
+			</label>
+
+			<label>
+				<input type="checkbox" name="category" value="val2"> Value 2
+			</label>
+		</div>
+
+		<div class="form-group">
+			<label for="exampleTextArea">Text Area</label>
+			<textarea name="exampleTextArea" placeholder="Placeholder text here."></textarea>
+		</div>
 		
-		<label>
-			<span>Radio Button 1</span>
-			<input type="radio" name="category" value="val">
-		</label>	
-		
-		<label>
-			<span>Radio Button 2</span>
-			<input type="radio" name="category" value="val">
-		</label>
+		<div class="selection-group">
+			<label>
+				<input type="radio" name="category" value="val1"> Radio Button 1
+			</label>
+
+			<label>
+				<input type="radio" name="category" value="val2"> Radio Button 2
+			</label>
+		</div>
 
 		<button type="submit">Submit</button>
 	</form>
