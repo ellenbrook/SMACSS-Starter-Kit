@@ -17,26 +17,27 @@ html {
 /* Typography Variables. Change scale using Gridlovers.net */
 /* Break Points */
 /* Random standard Desktop Sizes */
-/* Utility Classes */
-.pull-left {
-  float: left; }
+/*--------------------------------------------------------------
+ * # Mixins
+ * ------------------------------------------------------------- */
+/*--------------------------------------------------------------
+ * # Alignments
+ * ------------------------------------------------------------- */
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em; }
 
-.pull-right {
-  float: right; }
+.alignright {
+  display: inline;
+  float: right;
+  margin-left: 1.5em; }
 
-.center {
-  text-align: center; }
-
-.floated {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden; }
-  .floated li {
-    float: left; }
-    .floated li a {
-      display: inline-block;
-      padding: 10px; }
+.aligncenter {
+  clear: both;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
 
 /* Base Layout */
 html {
